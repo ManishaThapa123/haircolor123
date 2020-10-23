@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&family=Tangerine&display=swap" rel="stylesheet">
+</head>
+<style>
+    .container{
+        height: 385px;
+        width: 633px;
+        border: 1px solid rgb(193, 179, 204);
+        margin: auto;
+        margin-top: 100px;
+        background-color: rgb(236, 227, 243);
+
+       }
+    #color{
+        height: 213px;
+        width: 219px
+        
+    }
+    .image{
+        display: block;
+        width: 300px;
+       margin-left: 200px;
+       margin-top: 20px;
+        
+    }
+    h3{
+        text-align: center;
+        /* font-family: 'Satisfy', cursive; */
+        font-family: 'Tangerine', cursive;
+        color: rgb(151, 97, 97);
+        font-size: 50px;
+        margin: 10px 0px;
+
+    }
+    h1{
+        color: rgb(151, 97, 97);
+       display: inline-block;
+        font-family: 'Tangerine', cursive;
+        
+    }
+    #black{
+        background-color: rgb(41, 38, 38);
+        color: silver;
+
+    }
+    .btn{
+        padding: 2px 10px;
+        border: 1px solid grey;
+        cursor: pointer;
+    }
+    
+    #Golden{
+        background-color: rgb(238, 199, 148);
+        color: rgb(124, 94, 55);
+    }
+    #Purple{
+        background-color: rgb(231, 149, 231);
+        color: rgb(136, 75, 136);
+    }
+    #Red{
+        background-color: rgb(145, 60, 60);
+        color:  rgb(230, 105, 105);
+    }
+   .buttons{
+       display: inline-block;
+       margin-left: 82px;
+   }
+</style>
+<body>
+    <div class="container">
+        <h3>Hair color changer</h3>
+        <div class="image">
+       <img src="color1.jpg" alt="black haircolor" id="color">
+    </div>
+    
+    <div class="buttons">
+        <h1>Choose your hair color:&nbsp</h1>
+       <button class="btn" onclick="button()" id="black">Black</button>
+       <button class="btn" onclick="button2()" id="Golden">Golden</button>
+       <button class="btn" onclick="button1()" id="Purple">Purple</button>
+       <button class="btn" onclick="button3()" id="Red">Red</button>
+    </div>
+       
+    </div>
+<script>
+    function button(){
+        document.getElementById("color").src="color1.jpg";
+    }
+   function button1(){
+       document.getElementById("color").src="color.jpg";
+   }
+   function button2(){
+       document.getElementById("color").src="color2.jpg";
+   }
+   function button3(){
+       document.getElementById("color").src="color3.jpg";
+   }
+</script>
+   
+</body>
+</html>
